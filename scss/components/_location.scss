@@ -1,0 +1,32 @@
+.location{
+    display: flex;
+    justify-content: center;
+    &-map{
+        width: 50%;
+    }
+    &-text{
+        width: 50%;
+        padding: 30px 110px;
+        background: $bg-grey-white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &__tittle{
+            @include open-sans(400,40px,40px);
+            color: $text-grey;
+        }
+        &__description{
+            @include open-sans(300,16px,30px);
+            color: $text-grey;
+        }
+        &__link{
+            @include open-sans(400,16px,30px);
+            color: $text-grey;
+            text-decoration: underline;
+            font-style: italic;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
+}

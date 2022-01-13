@@ -1,0 +1,82 @@
+.header{
+    &-top{
+        margin: 18px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .burger{
+            border: none;
+            cursor: pointer;
+            padding: 0;
+        }
+    }
+    &-item{
+        display: flex;
+        align-items: center;
+    }
+    &-link{
+        @include din(14px,36px);
+        color: $text-white;
+        background: $bg-grey;
+        padding: 16px 60px;
+        transition: 0.3s;
+        border:2px solid #808E88;
+        &:hover{
+            background: white;
+            color: $bg-grey;
+            border: 2px solid#808E88;
+        }
+    }
+    .nav{
+        &-close{
+            display: none;
+        }
+        &-link{
+            display: inline-block;
+            padding: 10px 15px;
+            @include din(14px,24px);
+            color: $text-black;
+            &:hover{
+                background: $bg-grey;
+                color: $text-white;
+            }
+        }
+        &-flag{
+            margin:0 10px;
+            display: flex;
+        }
+    }
+    &-bg{
+        @include header;
+    }
+    &-tittle{
+        @include open-sans(300,70px,72px);
+        color: $text-white;
+        margin-top: 70px;
+    }
+    &-text{
+        @include open-sans(300,18px,24px);
+        color: $text-white;
+        margin-top: 15px;
+        text-align: center;
+        text-decoration: underline;
+  
+    }
+    &-direct{
+        display: flex;
+    }
+    &-directions{
+        display: block;
+        width: 180px;
+        text-align: center;
+        @include din(14px,28px);
+        color: $text-white;
+        border: 2px solid $text-white;
+        padding: 15px 30px;
+        margin-top: 40px;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    
+  }

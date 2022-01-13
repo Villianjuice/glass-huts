@@ -1,0 +1,26 @@
+.facilities{
+    background: $bg-grey;
+    
+    &-tittle{
+        text-align: center;
+        @include open-sans(400,40px,40px);
+        color: $text-white;
+    }
+    &-block{
+        display: flex;
+    }
+    
+}
+.block{
+    &-item{
+        text-align: center;
+        &__img{
+            margin-top: 80px;
+            margin-bottom: 20px;
+        }
+        &__text{
+            @include open-sans(400,18px,24px);
+            color:$text-white;
+        }
+    }
+}

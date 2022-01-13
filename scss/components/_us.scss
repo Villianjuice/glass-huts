@@ -1,0 +1,42 @@
+.us{
+    &-home{
+        margin: 100px 0;
+    }
+    &-content{
+        display: flex;
+        justify-content: space-around;
+    }
+    &-left{
+        &__tittle{
+            @include open-sans (400,40px,60px);
+            color: $text-grey;
+            margin-bottom: 38px;
+        }
+        &__item{
+            @include open-sans(300,16px,30px);
+             color: $text-black;
+            &:first-child{
+                margin-bottom: 15px;
+            }
+        }
+        &__img{
+            margin-top: 38px;
+        }
+        &__icon{
+            margin-right: 43px;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+
+    }
+    &-right{
+        &__img{
+            display: block;
+        }
+    }
+    &-luv{
+        margin: 0 auto 80px;
+        max-width: 125px;
+    }
+}

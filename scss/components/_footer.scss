@@ -1,0 +1,62 @@
+.footer{
+    padding: 60px 30px;
+    background: $bg-grey;
+    &-content{
+        display: flex;
+        justify-content: space-between;
+    }
+    .newsletter{
+        width: 30%;
+        &-tittle{
+            @include open-sans (600,16px,30px);
+            color: $text-white;
+            margin-bottom: 20px;
+        }
+        &-email{
+            width: 100%;
+            @include open-sans(300,16px,30px);
+            font-style: italic;
+            color: $text-white;
+            border-bottom: 1px solid #EFEFEF;
+            
+            display: inline-block;
+        }
+        &-item{
+            margin-bottom: 20px;
+        }
+        &-list{
+            @include open-sans(300,16px,30px);
+            color: $text-white;  
+        }
+        &-copyright{
+            @include open-sans(300,14px,30px);
+            color: $text-white;  
+        }
+    }
+    .system{
+        width: 70%;
+        &-item{
+            display: flex;
+            margin-bottom: 40px;
+            justify-content: flex-end;
+        }
+        &-list{
+            @include din(14px,24px);
+            color: $text-white;
+            margin-right: 30px;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+        &-pay{
+            display: flex;
+            justify-content: flex-end;
+        }
+        &-logo{
+            margin-right: 39px;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,58 @@
+.content{
+    margin: 100px 0;
+    display: flex;
+    justify-content: space-between;
+    &-tittle{
+        @include open-sans(400,40px,40px);
+        color: $bg-grey;
+        margin: 50px 0;
+    }
+    &-title{
+        margin: 40px 0 10px;
+        @include open-sans(400,24px,36px);
+    }
+    &-desc{
+        width: 429px;
+        display: flex;
+        flex-direction: column;
+    }
+    &-list{
+        display: flex;
+        align-items: center;
+    }
+    &-item{
+        &:not(:last-child){
+            margin-right: 30px;
+        }
+    }
+    &-btn,.inside-btn,.pract-btn{
+        padding: 0;
+        background-color: transparent;
+        cursor: pointer;
+        border: none;
+        @include open-sans(400,18px,1);
+        color: $bg-grey;
+        font-style: italic;
+        margin-bottom: 50px;
+        &--default{
+            text-decoration: underline
+        }
+    }
+    .inside-btn--default,.pract-btn--default{
+        text-decoration: underline
+    }
+    &-text{
+        @include open-sans(300,16px,30px);
+        color: $bg-grey;
+        text-align: justify;
+    }
+    img{
+        display: inline-block;
+    }
+    .tab-text,.tab-inside,.tab-pract{
+        display: none;
+    }
+    .tab-text--active,.tab-inside--active,.tab-pract--active{
+        display: flex;
+    }
+}

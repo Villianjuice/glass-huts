@@ -1,0 +1,61 @@
+.hero{
+    margin-top: 100px;
+    display: flex;
+    &-cabins{
+        display: flex;
+    }
+    &-content{
+        padding: 100px 0;
+        justify-content: space-between;
+
+        display: flex;
+        justify-content: space-between;
+        &__block{
+            width: 33%;
+            margin-right: 25px;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+        &__img{
+            width: 100%;
+            height: 100%;
+        }
+        &__video{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+.cabins{
+    &-pic{
+        &__img{
+            width: 100%;
+        }
+    }
+    &-text{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &__tittle{
+            @include open-sans(400,40px,40px);
+            color: $text-grey;
+        }
+        &__description{
+            margin: 20px 0;
+            width: 90%;
+            @include open-sans(400,16px,30px);
+            color: $text-black;
+        }
+        &__link{
+            @include open-sans (600,16px,30px);
+            color: $text-grey;
+            text-decoration: underline;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
+}
+

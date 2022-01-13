@@ -1,0 +1,105 @@
+.form{
+    margin: 80px 0;
+    width: 660px;
+    display: flex;
+    flex-direction: column;
+    &-label{
+        margin: 12px 0;
+        display: flex;
+        &__city{
+            width: 50%;
+            margin-right: 20px;
+        }
+    }
+    &__input{
+        width: 100%;
+        &-name{
+            width: 50%;
+            &:not(:last-child){
+                margin-right: 19px;
+            }
+        }
+        &-city{
+            width: 100%;
+        }
+    }
+    &__text{
+        resize: none;
+        min-height: 124px;
+        margin: 24px 0;
+    }
+    &__input,&__text{
+        padding: 16px 22px;
+        border: 1px solid #5B6460;
+        outline: none;
+        @include open-sans(400,14px,16px);
+        color: $text-black;
+        &::placeholder{
+            color: $text-grey;
+        }
+    }
+    &__button{
+        padding: 16px 80px;
+        align-self: flex-end;
+    }
+    &__select{
+        background: transparent;
+        width: 318px;
+        padding: 13.8px 22px;
+        border: none;
+        outline: none;
+        @include open-sans(400,14px,16px);
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    &-title{
+        @include open-sans(400,24px,1);
+        color: $text-grey;
+        
+    }
+    .title__wrapper{
+        margin: 24px 0 12px;
+        padding-bottom: 24px;
+        border-bottom: 1px solid $bg-grey;
+        display: flex;
+        justify-content: space-between;
+    }
+    &-pay{
+        display: flex;
+        img{
+            &:not(:last-child){
+                margin-right: 18px;
+            }
+
+        }
+    }
+    &-label__card,&-label__country{
+        padding: 0 24px;
+        border: 1px solid #5B6460;
+    }
+    &__select-country{
+        padding: 13.8px 0;
+        width: 100%;
+    }
+    &__select-card,&__input-card{
+        width: 100%;
+        border:none
+    }
+    &__input-card{
+        padding: 16px 0;
+    }
+    &-label__country{
+        width: 50%;
+    }
+    
+    &-title__text{
+        margin-top:50px;
+    }
+    input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+}

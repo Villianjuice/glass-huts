@@ -1,0 +1,31 @@
+.button{
+    display: flex;
+    background: $bg-grey-white;
+    border: 2px solid gray;
+    &-link{
+        @include din(20px,28px);
+        color: $text-white;
+        padding: 36px 80px;
+        background: $bg-grey;
+        border-right:2px solid gray;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    &:hover{
+        .button-link{
+        background: $bg-grey-white;
+        color: $text-black;
+        }
+    }
+    &-list{
+        margin: 22px 30px;
+    }
+    &-item{
+        @include din(12px,1);
+        color: $text-black;
+        &:nth-of-type(2){
+            @include din(20px,28px)
+        }
+    }
+}

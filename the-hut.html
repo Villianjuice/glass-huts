@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./js/swiper-bundle.min.css" />
+  <title>The hut</title>
+  <link rel="icon" href="./img/logo-white.svg">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container container__header">
+        <div class="header-top">
+          <button class="burger ">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+          </button>
+          <a class="header-logo__link" href="./index.html">
+            <img src="./img/logo-white.svg" alt="logo-white" class="header-logo">
+          </a>
+          <div class="header-item">
+            <nav class="header-nav">
+              <button class="nav-close"></button>
+              <a href="./index.html" class="nav-link">HOME</a>
+              <a href="./the-hut.html" class="nav-link">THE HUT</a>
+              <a href="./the-area.html" class="nav-link">THE AREA</a>
+              <a href="./booking.html" class="nav-link">BOOKING</a>
+              <a href="./about-us.html" class="nav-link">ABOUT US</a>
+              <a href="./FAQ.html" class="nav-link">FAQ</a>
+            </nav>
+            <div class="nav-flag"> <img src="./img/uk-flag.jpg" alt=""></div>
+          </div>
+          <a href="./booking.html" class="header-link">BOOK NOW</a>
+
+        </div>
+      </div>
+      <div class="header-wrapper">
+        <div class="header-bg" style="background-image: url(./img/the-hut.png);">
+          <div class="header-tittle">The Hut</div>
+
+        </div>
+
+      </div>
+    </header>
+    <main class="hut">
+      <div class="container container-content">
+        <!-- The Outside-->
+        <section class="content">
+          <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./img/content1.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./img/content2.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./img/content3.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./img/content4.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./img/content5.jpg" alt=""></div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+          </div>
+          <div class="content-desc">
+            <h3 class="content-tittle">The Outside</h3>
+            <ul class="content-list">
+              <li class="content-item">
+                <button class="content-btn content-btn--default" data-default="one" data-path="one">Hot tube</button>
+              </li>
+              <li class="content-item">
+                <button class="content-btn" data-default="two" data-path="two">Electric car change</button>
+              </li>
+            </ul>
+            <p class="tab-text content-text  tab-text--active" data-target="one" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste expedita incidunt assumenda dolorum quas aspernatur tempore, atque sapiente sed, magni fugit laboriosam repudiandae aliquid maxime aperiam ea, ipsam ducimus. Eveniet.
+            Quae deleniti alias porro odit quia recusandae eligendi suscipit. Eius veritatis pariatur quam? Cupiditate, eius! </p>
+            <p class="tab-text content-text " data-target="two" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis quibusdam impedit, corrupti minus tempora, repudiandae assumenda consequatur repellat quam beatae optio quaerat labore harum, et at eligendi iure! Consequuntur, doloribus?
+            </p>
+          </div>
+        </section>
+        <!-- The Inside-->
+        <section class="content content-reverse">
+          <div class="content-desc">
+            <h3 class="content-tittle">The Inside</h3>
+            <ul class="content-list">
+              <li class="content-item">
+                <button class="inside-btn inside-btn--default" data-default="three" data-path="three">Space</button>
+              </li>
+              <li class="content-item">
+                <button class="inside-btn" data-default="four" data-path="four">Kitchen</button>
+              </li>
+              <li class="content-item">
+                <button class="inside-btn" data-default="five" data-path="five">Bathroom</button>
+              </li>
+            </ul>
+            <p class="tab-inside content-text  tab-inside--active" data-target="three" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste expedita incidunt assumenda dolorum quas aspernatur tempore, atque sapiente sed, magni fugit laboriosam repudiandae aliquid maxime aperiam ea, ipsam ducimus. Eveniet.
+            Quae deleniti alias porro odit quia recusandae eligendi suscipit. Eius veritatis pariatur quam? Cupiditate, eius! </p>
+            <p class="tab-inside content-text " data-target="four" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis quibusdam impedit, corrupti minus tempora, repudiandae assumenda consequatur repellat quam beatae optio quaerat labore harum, et at eligendi iure! Consequuntur, doloribus?
+            </p>
+            <p class="tab-inside content-text " data-target="five" >Løvtag’s three exclusive and comfortable cabins, Et, Ro and Ly, are designed by architect Sigurd Larsen. They all have an open space with a double bed, a double sofa bed, kitchen, separate toilet and an outdoor shower. On the roof, surrounded by treetops, there is a terrace, which is about nine meters above ground. The cottages are built around tall, old trees that go through the entire cottage from floor to ceiling.
+            </p>
+          </div>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="./img/content2.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="./img/content5.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="./img/content4.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="./img/content3.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="./img/content1.jpg" alt=""></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            </div>
+        </section>
+        <!-- Practicalities-->
+        <section class="content">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="./img/content3.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="./img/content5.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="./img/content2.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="./img/content4.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="./img/content1.jpg" alt=""></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <div class="content-desc">
+            <h3 class="content-tittle">The Outside</h3>
+            <ul class="content-list">
+              <li class="content-item">
+                <button class="pract-btn pract-btn--default" data-default="seven" data-path="seven">Breakfast</button>
+              </li>
+              <li class="content-item">
+                <button class="pract-btn" data-default="eight" data-path="eight">Classic Dinner</button>
+              </li>
+            </ul>
+            <p class="tab-pract content-text  tab-pract--active" data-target="seven" >Løvtag’s three exclusive and comfortable cabins, Et, Ro and Ly, are designed by architect Sigurd Larsen. They all have an open space with a double bed, a double sofa bed, kitchen, separate toilet and an outdoor shower. On the roof, surrounded by treetops, there is a terrace, which is about nine meters above ground. </p>
+            <p class="tab-pract content-text " data-target="eight" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis quibusdam impedit, corrupti minus tempora, repudiandae assumenda consequatur repellat quam beatae optio quaerat labore harum, et at eligendi iure! Consequuntur, doloribus?
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container container__footer">
+        <div class="footer-content">
+          <div class=".newsletter">
+            <h3 class="newsletter-tittle">Newsletter</h3>
+            <span class="newsletter-email">Email Adrdess</span>
+            <ul class="newsletter-item">
+              <li class="newsletter-list">Sign up to our newsletter for special things and receive </li>
+              <li class="newsletter-list">10% off your next order.</li>
+            </ul>
+            <span class="newsletter-copyright">© 2021 The Glass Huts</span>
+          </div>
+          <div class="system">
+            <ul class="system-item">
+              <li class="system-list">TERMS AND CONDITIONS</li>
+              <li class="system-list">CENCELLATION POLICY</li>
+              <li class="system-list">PRIVACY POLICY</li>
+            </ul>
+            <div class="system-pay">
+              <div class="system-logo">
+                <img src="./img/paypal-logo.svg" alt="">
+              </div>
+              <div class="system-logo">
+                <img src="./img/mastercard.svg" alt="">
+              </div>
+              <div class="system-logo">
+                <img src="./img/visa.svg" alt="">
+              </div>
+              <div class="system-logo">
+                <img src="./img/bank.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
